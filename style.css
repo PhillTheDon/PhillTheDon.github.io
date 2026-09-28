@@ -32,8 +32,8 @@ a:focus-visible { outline: 3px solid var(--primary); outline-offset: 5px; }
 .eyebrow, .section-index, .project-type, .hero-note { font: 500 .68rem var(--mono); letter-spacing: .12em; text-transform: uppercase; }
 .eyebrow, .section-index { color: var(--coral); }
 h1, h2, h3, p { margin-top: 0; }
-h1 { font-size: clamp(3.4rem, 8vw, 7.2rem); letter-spacing: -.075em; line-height: .97; max-width: 900px; margin: 22px 0 32px; }
-h1 .name-line, h1 .tagline { white-space: nowrap; }
+h1 { font-size: clamp(3.4rem, 6.5vw, 6rem); letter-spacing: -.075em; line-height: .97; max-width: 100%; margin: 22px 0 32px; }
+h1 .name-line, h1 .tagline { display: block; white-space: normal; }
 h1 .tagline { color: var(--muted); font-style: normal; }
 .hero-copy { max-width: 500px; color: var(--muted); font-size: 1.08rem; }
 .hero-profile { width: 240px; height: 240px; margin: 0; border: 8px solid var(--cream); border-radius: 50%; overflow: hidden; background: var(--cream); box-shadow: 0 0 0 1px var(--line); }
