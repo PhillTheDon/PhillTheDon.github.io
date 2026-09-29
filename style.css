@@ -80,6 +80,7 @@ a:focus-visible, .theme-toggle:focus-visible { outline: 3px solid var(--primary)
 .theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 0; border: 1px solid var(--line); background: var(--toggle-background); color: var(--ink); cursor: pointer; font-size: 1.05rem; }
 .theme-toggle:hover { color: var(--primary); border-color: var(--primary); }
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 72px; align-items: center; padding: 118px 0 150px; position: relative; border-radius: 28px; background: var(--hero-background); box-shadow: var(--hero-outline); }
+.hero-content { padding-inline: 24px; }
 .eyebrow, .section-index, .project-type, .hero-note { font: 500 .68rem var(--mono); letter-spacing: .12em; text-transform: uppercase; }
 .eyebrow, .section-index { color: var(--coral); }
 h1, h2, h3, p { margin-top: 0; }
@@ -97,7 +98,7 @@ h1 .tagline { color: var(--muted); font-style: normal; }
 .button-secondary { border: 1px solid var(--ink); background: var(--button-secondary-background); }
 .button-secondary:hover { color: #fff; background: var(--button-secondary-hover-background); }
 .text-link { display: inline-block; font-weight: 700; font-size: .78rem; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 4px; }
-.hero-note { position: absolute; right: 0; bottom: 58px; color: var(--muted); display: flex; align-items: center; gap: 10px; letter-spacing: .04em; }
+.hero-note { position: absolute; right: 24px; bottom: 58px; color: var(--muted); display: flex; align-items: center; gap: 10px; letter-spacing: .04em; }
 .status-dot { width: 9px; height: 9px; background: var(--primary); border-radius: 50%; box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.12); }
 .intro-band, .services-band { background: var(--section-background); }
 .split-section { display: grid; grid-template-columns: 1fr 2fr; gap: 70px; padding: 112px 0; }
@@ -134,10 +135,11 @@ h2 { font-size: clamp(2.5rem, 5vw, 4.8rem); line-height: 1.02; letter-spacing: -
   .site-header { align-items: flex-start; }
   .site-nav { gap: 10px 12px; flex-wrap: wrap; justify-content: flex-end; font-size: .58rem; max-width: 270px; }
   .hero { display: block; padding: 95px 0 125px; }
+  .hero-content { padding-inline: 16px; }
   h1 { font-size: clamp(3.1rem, 16vw, 5.5rem); white-space: normal; }
   h1 .name-line, h1 .tagline { white-space: normal; }
   .hero-profile { width: 170px; height: 170px; margin: 48px auto 0; transform: none; }
-  .hero-note { position: static; margin-top: 60px; }
+  .hero-note { position: static; flex-wrap: wrap; margin: 60px 16px 0; }
   .split-section, .section-heading { grid-template-columns: 1fr; gap: 25px; padding: 78px 0; }
   .section-heading { margin-bottom: 35px; }
   .projects { padding: 78px 0; }
